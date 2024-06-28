@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mahad Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>APPLICATION FORM</h1>
+        <form action="/submit" method="POST">
+            <div class="section">
+                <h2>A. General Questions</h2>
+                <div class="form-group">
+                    <label for="name">Proposed Insured's Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Birth Date:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female" required> Female</label>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="idnumber">ID Number:</label>
+                    <input type="text" id="idnumber" name="idnumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="ssn">Social Security Number:</label>
+                    <input type="text" id="ssn" name="ssn" required>
+                </div>
+                <div class="form-group">
+                    <label>Status:</label>
+                    <label><input type="radio" name="status" value="single" required> Single</label>
+                    <label><input type="radio" name="status" value="married" required> Married</label>
+                    <label><input type="radio" name="status" value="divorced" required> Divorced</label>
+                    <label><input type="radio" name="status" value="others" required> Others</label>
+                </div>
+                <div class="form-group">
+                    <label for="occupation">Occupation:</label>
+                    <input type="text" id="occupation" name="occupation" required>
+                </div>
+                <div class="form-group">
+                    <label>Are you a retiree?</label>
+                    <label><input type="radio" name="retiree" value="yes" required> Yes</label>
+                    <label><input type="radio" name="retiree" value="no" required> No</label>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>B. Type of Health Coverage</h2>
+                <div class="form-group">
+                    <label>Employee:</label>
+                    <label><input type="radio" name="employee" value="yes" required> Yes</label>
+                    <label><input type="radio" name="employee" value="no" required> No</label>
+                </div>
+                <div class="form-group">
+                    <label>Plan Choice:</label>
+                    <input type="text" name="employee_plan_choice" required>
+                </div>
+                <div class="form-group">
+                    <label>Spouse:</label>
+                    <label><input type="radio" name="spouse" value="yes" required> Yes</label>
+                    <label><input type="radio" name="spouse" value="no" required> No</label>
+                </div>
+                <div class="form-group">
+                    <label>Plan Choice:</label>
+                    <input type="text" name="spouse_plan_choice" required>
+                </div>
+                <div class="form-group">
+                    <label>Children:</label>
+                    <label><input type="radio" name="children" value="yes" required> Yes</label>
+                    <label><input type="radio" name="children" value="no" required> No</label>
+                </div>
+                <div class="form-group">
+                    <label>Plan Choice:</label>
+                    <input type="text" name="children_plan_choice" required>
+                </div>
+                <div class="form-group">
+                    <label>Complete if Spouse/Children are Proposed for Insurance:</label>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>SSN No.</th>
+                                <th>Relationship to proposed insured</th>
+                                <th>Birth Date</th>
+                                <th>Age</th>
+                                <th>Sex</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" name="dependent_name_1"></td>
+                                <td><input type="text" name="dependent_ssn_1"></td>
+                                <td><input type="text" name="dependent_relationship_1"></td>
+                                <td><input type="date" name="dependent_birthdate_1"></td>
+                                <td><input type="text" name="dependent_age_1"></td>
+                                <td><input type="text" name="dependent_sex_1"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>C. The Policy</h2>
+                <div class="form-group">
+                    <label for="units">Units:</label>
+                    <input type="text" id="units" name="units" required>
+                </div>
+                <div class="form-group">
+                    <label for="annual-premium">Annual Premium:</label>
+                    <input type="text" id="annual-premium" name="annual_premium" required>
+                </div>
+                <div class="form-group">
+                    <label>Payment Mode:</label>
+                    <label><input type="radio" name="payment_mode" value="annual" required> Annual</label>
+                    <label><input type="radio" name="payment_mode" value="semi-annual" required> Semi-Annual</label>
+                    <label><input type="radio" name="payment_mode" value="monthly" required> Monthly PAT (complete PAT card)</label>
+                </div>
+                <div class="form-group">
+                    <label for="cash-with-application">Cash with Application:</label>
+                    <input type="text" id="cash-with-application" name="cash_with_application" required>
+                </div>
+                <div class="form-group">
+                    <label for="planned-modal-premium">Planned Modal Premium:</label>
+                    <input type="text" id="planned-modal-premium" name="planned_modal_premium" required>
+                </div>
+                <div class="form-group">
+                    <label>Terms & Conditions:</label>
+                    <textarea readonly>Improvement should be measured regularly and assessed in order for you to know what’s beneficial and what is not. This will help you set new targets.</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="signature">Signature:</label>
+                    <input type="text" id="signature" name="signature" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
